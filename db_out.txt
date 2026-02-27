@@ -1,0 +1,104 @@
+Tables:
+Array
+(
+    [0] => detail_orderans
+    [1] => karyawans
+    [2] => kategoris
+    [3] => mejas
+    [4] => menus
+    [5] => orderans
+    [6] => update_stokharians
+    [7] => users
+)
+
+Columns for menus:
+Array
+(
+    [Field] => id
+    [Type] => bigint(20) unsigned
+    [Null] => NO
+    [Key] => PRI
+    [Default] => 
+    [Extra] => auto_increment
+)
+Array
+(
+    [Field] => nama_menu
+    [Type] => varchar(255)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => harga
+    [Type] => int(11)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => id_kategori
+    [Type] => bigint(20) unsigned
+    [Null] => YES
+    [Key] => MUL
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => stok_porsi
+    [Type] => int(11)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => foto
+    [Type] => varchar(255)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => deskripsi
+    [Type] => text
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => status
+    [Type] => enum('available','sold out')
+    [Null] => YES
+    [Key] => 
+    [Default] => available
+    [Extra] => 
+)
+Array
+(
+    [Field] => created_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => updated_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)

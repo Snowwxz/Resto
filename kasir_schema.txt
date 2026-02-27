@@ -1,0 +1,240 @@
+Columns for orderans:
+Array
+(
+    [Field] => id
+    [Type] => bigint(20) unsigned
+    [Null] => NO
+    [Key] => PRI
+    [Default] => 
+    [Extra] => auto_increment
+)
+Array
+(
+    [Field] => nama_konsumen
+    [Type] => varchar(255)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => total_bayar
+    [Type] => int(11)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => tanggal_orderan
+    [Type] => datetime
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => status
+    [Type] => enum('pending','dibayar','batal')
+    [Null] => YES
+    [Key] => 
+    [Default] => pending
+    [Extra] => 
+)
+Array
+(
+    [Field] => id_user
+    [Type] => bigint(20) unsigned
+    [Null] => YES
+    [Key] => MUL
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => id_meja
+    [Type] => bigint(20) unsigned
+    [Null] => YES
+    [Key] => MUL
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => metode_pembayaran
+    [Type] => enum('cash','qris','cashless')
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => created_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => updated_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+
+Columns for detail_orderans:
+Array
+(
+    [Field] => id
+    [Type] => bigint(20) unsigned
+    [Null] => NO
+    [Key] => PRI
+    [Default] => 
+    [Extra] => auto_increment
+)
+Array
+(
+    [Field] => id_orderan
+    [Type] => bigint(20) unsigned
+    [Null] => YES
+    [Key] => MUL
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => id_menu
+    [Type] => bigint(20) unsigned
+    [Null] => YES
+    [Key] => MUL
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => jumlah
+    [Type] => int(11)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => metode_pesanan
+    [Type] => enum('takeaway','dinein')
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => catatan
+    [Type] => text
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => status
+    [Type] => enum('processing','done')
+    [Null] => YES
+    [Key] => 
+    [Default] => processing
+    [Extra] => 
+)
+Array
+(
+    [Field] => subtotal
+    [Type] => int(11)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => created_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => updated_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+
+Columns for mejas:
+Array
+(
+    [Field] => id
+    [Type] => bigint(20) unsigned
+    [Null] => NO
+    [Key] => PRI
+    [Default] => 
+    [Extra] => auto_increment
+)
+Array
+(
+    [Field] => nomor_meja
+    [Type] => varchar(255)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => status
+    [Type] => enum('available','booking')
+    [Null] => YES
+    [Key] => 
+    [Default] => available
+    [Extra] => 
+)
+Array
+(
+    [Field] => kapasitas
+    [Type] => int(11)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => created_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => updated_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+

@@ -1,0 +1,147 @@
+Columns for users:
+Array
+(
+    [Field] => id
+    [Type] => bigint(20) unsigned
+    [Null] => NO
+    [Key] => PRI
+    [Default] => 
+    [Extra] => auto_increment
+)
+Array
+(
+    [Field] => username
+    [Type] => varchar(255)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => email
+    [Type] => varchar(255)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => password
+    [Type] => varchar(255)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => role
+    [Type] => enum('admin','kasir','chef')
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => status
+    [Type] => enum('aktif','nonaktif')
+    [Null] => YES
+    [Key] => 
+    [Default] => aktif
+    [Extra] => 
+)
+Array
+(
+    [Field] => id_karyawan
+    [Type] => bigint(20) unsigned
+    [Null] => YES
+    [Key] => MUL
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => created_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => updated_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+
+Columns for karyawans:
+Array
+(
+    [Field] => id
+    [Type] => bigint(20) unsigned
+    [Null] => NO
+    [Key] => PRI
+    [Default] => 
+    [Extra] => auto_increment
+)
+Array
+(
+    [Field] => nama_karyawan
+    [Type] => varchar(255)
+    [Null] => NO
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => no_hp
+    [Type] => varchar(255)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => alamat
+    [Type] => text
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => jabatan
+    [Type] => varchar(255)
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => created_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)
+Array
+(
+    [Field] => updated_at
+    [Type] => timestamp
+    [Null] => YES
+    [Key] => 
+    [Default] => 
+    [Extra] => 
+)

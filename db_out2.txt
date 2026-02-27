@@ -1,0 +1,17 @@
+Array
+(
+    [0] => Array
+        (
+            [id] => 5
+            [nama_menu] => 
+            [harga] => 0
+            [id_kategori] => 
+            [stok_porsi] => 0
+            [foto] => 
+            [deskripsi] => 
+            [status] => available
+            [created_at] => 2026-02-21 05:24:20
+            [updated_at] => 2026-02-21 05:24:20
+        )
+
+)
